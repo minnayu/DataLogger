@@ -22,19 +22,23 @@ public class DataLoggerScript : MonoBehaviour
         {
             if (Input.GetKeyDown("space"))
             {
-                DateTime now = DateTime.Now;
-                writer.WriteLine(now.ToString() + "     Spacebar pressed");
+                writer.WriteLine(GetCurrentTime() + "     Spacebar pressed");
             }
         }
  
+    }
+
+    public string GetCurrentTime()
+    {
+        DateTime now = DateTime.Now;
+        return now.ToString();
     }
 
     public void OnClick()
     {
         using (StreamWriter writer = File.AppendText(filename))
         {
-            DateTime now = DateTime.Now;
-            writer.WriteLine(now.ToString() + "     Button clicked");
+            writer.WriteLine(GetCurrentTime() + "     Button clicked");
         }
     }
     private void OnApplicationStart()
@@ -42,8 +46,7 @@ public class DataLoggerScript : MonoBehaviour
         //writes current time to file
         using (StreamWriter writer = new StreamWriter(filename))
         {
-            DateTime now = DateTime.Now;
-            writer.WriteLine(now.ToString() + "     Application opened");
+            writer.WriteLine(GetCurrentTime() + "     Application opened");
         }
     }
 
@@ -51,8 +54,7 @@ public class DataLoggerScript : MonoBehaviour
     {
         using (StreamWriter writer = File.AppendText(filename))
         {
-            DateTime now = DateTime.Now;
-            writer.WriteLine(now.ToString() + "     Application closed");
+            writer.WriteLine(GetCurrentTime() + "     Application closed");
         }
     }
 
