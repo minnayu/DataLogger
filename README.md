@@ -1,10 +1,18 @@
-# DataLogger
- 
+1)
+Minna Yu
+2378963
+minyu@chapman.edu
+CPSC 236-03
+DataLogger
 
-1. Text File Generation and Writing
+2)
+DataLogger Github Link
 
-2. Startup/Shutdown messages with Timestamps
+3) 
+N/A
 
-3. User Input Tracking (Spacebar)
+4)
+Links provided in the DataLogger rubric
 
-4. User Input Tracking (Button)
+5)
+Press the play button in Unity with the DataLogger project open
