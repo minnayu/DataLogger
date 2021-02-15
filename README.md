@@ -2,8 +2,8 @@
 Minna Yu
 2378963
 minyu@chapman.edu
-#CPSC 236-03
-#DataLogger
+CPSC 236-03
+DataLogger
 
 2)
 DataLogger Github Link
